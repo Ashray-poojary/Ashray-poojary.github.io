@@ -136,7 +136,7 @@
   font-size: 20px;
   font-weight: 200;
 }
-.focus {
+.about-detail {
   margin: 20px 20px;
   padding: 20px 20px;
   height: 200px;
@@ -145,7 +145,7 @@
   border-radius: 20px;
 }
 
-.focus #focustitle {
+.about-detail #focustitle {
   background-color: #11141f;
   color: #5c85ff;
   font-size: 23px;
