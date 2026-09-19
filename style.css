@@ -137,7 +137,7 @@
   font-weight: 200;
 }
 .about-detail {
-  margin: 20px 20px;
+  margin: 40px 20px 40px 20px;
   padding: 20px 20px;
   height: 200px;
   background-color: #11141f;
@@ -165,3 +165,42 @@
   background-color: #11141f;
 }
 /* completed this much on 18/9/2026 24:45 pm */
+.tools-container {
+  margin: 20px 20px;
+  /* padding: 20px 20px;
+  background-color: #11141f;
+  border: 2px solid #262e40;
+  border-radius: 20px;
+  height: 200px; */
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px 20px;
+  align-items: center;
+}
+
+.tools-container .tool {
+  width: 500px;
+  height: 100px;
+  background-color: #11141f;
+  border: 2px solid #262e40;
+  border-radius: 20px;
+  padding: 40px 20px;
+  font-family: 'Inter';
+  /* background-color: red; */
+}
+.tools-container .tool :nth-child(1) {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  background-color: #11141f;
+}
+
+.tools-container .tool :nth-child(2) {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  background-color: #11141f;
+  font-weight: 100;
+}
