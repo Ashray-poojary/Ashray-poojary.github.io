@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --navbarcolor: #171c2b;
+  --herocolor: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #090b12;
+}
+.navbar {
+  height: 72px;
+  width: 100%;
+  background-color: #171c2b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  /* background-color: red; */
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--navbarcolor);
+}
+.title p {
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  background-color: var(--navbarcolor);
+}
+.navigation {
+  width: 340px;
+  height: 40px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  background-color: var(--navbarcolor);
+}
+.navigation a {
+  text-decoration: none;
+  color: white;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  background-color: var(--navbarcolor);
+}
+
+.hero {
+  margin: 60px 0px;
+  height: 620px;
+  background-color: #ffffff;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero-frame {
+  width: 50%;
+  background-color: var(--herocolor);
+  margin: 0px 20px;
+}
+.hero-frame p {
+  background-color: var(--herocolor);
+}
+.hero-frame :nth-child(1) {
+  color: #7aa6ff;
+  font-size: large;
+  margin-bottom: 40px;
+  font-family: "Inter", sans-serif;
+  background-color: var(--herocolor);
+  font-weight: 600;
+}
+.hero-frame :nth-child(2) {
+  color: #5c84ff;
+  font-size: 80px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 20px;
+  background-color: var(--herocolor);
+  font-weight: 600;
+}
+.hero-frame :nth-child(3) {
+  color: #a8b0c7;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  background-color: var(--herocolor);
+  margin-bottom: 20px;
+}
+.hero-btn1 {
+  height: 60px;
+  width: 160px;
+  border-radius: 18px;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 8px;
+  background-color: #4f7aff;
+  border: 2px solid #384057;
+  font-family: "Inter", sans-serif;
+}
+.hero-btn2 {
+  height: 60px;
+  width: 160px;
+  border-radius: 18px;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #171c2b;
+  border: 2px solid #384057;
+  font-family: "Inter", sans-serif;
+}
+.svg-spiral {
+  background-color: var(--herocolor);
+  margin-right: 10%;
+}
+/* hero part css ends here */
+.about {
+  margin: 0px 20px;
+  font-family: "Inter", sans-serif;
+}
+.about :nth-child(1) {
+  font-size: 30px;
+  color: #5c85ff;
+  margin-bottom: 20px;
+}
+.about :nth-child(2) {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about :nth-child(3) {
+  font-size: 20px;
+  font-weight: 200;
+}
+.focus {
+  margin: 20px 20px;
+  padding: 20px 20px;
+  height: 200px;
+  background-color: #11141f;
+  border: 2px solid #262e40;
+  border-radius: 20px;
+}
+
+.focus #focustitle {
+  background-color: #11141f;
+  color: #5c85ff;
+  font-size: 23px;
+}
+.focustags {
+  height: 90%;
+  font-size: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px 100px;
+  background-color: #11141f;
+}
+
+.focustags p {
+  background-color: #11141f;
+}
+/* completed this much on 18/9/2026 24:45 pm */
