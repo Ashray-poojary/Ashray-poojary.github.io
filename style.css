@@ -4,8 +4,6 @@
   --herocolor: #ffffff;
 }
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -122,12 +120,14 @@
   margin-right: 10%;
 }
 svg.svg-spiral .circle1 {
-   animation: spin1 10s linear infinite;
+  animation: spin1 10s linear infinite;
   transform-origin: center;
   transform-box: fill-box;
 }
 @keyframes spin1 {
-  to { transform: scale(-2); }
+  to {
+    transform: scale(-2);
+  }
 }
 svg.svg-spiral .circle2 {
   animation: spin2 10s linear infinite;
@@ -136,7 +136,9 @@ svg.svg-spiral .circle2 {
 }
 
 @keyframes spin2 {
-  to { transform: scale(2); }
+  to {
+    transform: scale(2);
+  }
 }
 
 /* hero part css ends here */
@@ -209,7 +211,7 @@ svg.svg-spiral .circle2 {
   border: 2px solid #262e40;
   border-radius: 20px;
   padding: 40px 20px;
-  font-family: 'Inter';
+  font-family: "Inter";
   /* background-color: red; */
 }
 .tools-container .tool :nth-child(1) {
