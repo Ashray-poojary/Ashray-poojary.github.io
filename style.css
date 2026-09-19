@@ -9,6 +9,8 @@
   padding: 0;
   color: white;
   background-color: #090b12;
+  scroll-behavior: smooth;
+  scroll-margin: 20px;
 }
 .navbar {
   height: 72px;
