@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 :root {
   --navbarcolor: #171c2b;
   --herocolor: #ffffff;
@@ -22,62 +23,57 @@
 }
 
 .title {
-  /* background-color: red; */
   padding: 0px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--navbarcolor);
+  background-color: #171c2b;
 }
 .title p {
   font-size: 30px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  background-color: var(--navbarcolor);
+  background-color: #171c2b;
 }
 .navigation {
   width: 340px;
   height: 40px;
-  /* background-color: red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 10px;
-  background-color: var(--navbarcolor);
+  background-color: #171c2b;
 }
 .navigation a {
   text-decoration: none;
   color: white;
-  /* font-family: Arial, Helvetica, sans-serif; */
   font-family: "Inter", sans-serif;
   font-size: 14px;
-  background-color: var(--navbarcolor);
+  background-color: #171c2b;
 }
 
 .hero {
   margin: 50px 0px;
   height: 620px;
   background-color: #ffffff;
-  /* display: grid; */
-  /* grid-template-columns: 1fr 1fr; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .hero-frame {
   width: 50%;
-  background-color: var(--herocolor);
+  background-color: #ffffff;
   margin: 0px 20px;
 }
 .hero-frame p {
-  background-color: var(--herocolor);
+  background-color: #ffffff;
 }
 .hero-frame :nth-child(1) {
   color: #7aa6ff;
   font-size: large;
   margin-bottom: 40px;
   font-family: "Inter", sans-serif;
-  background-color: var(--herocolor);
+  background-color: #ffffff;
   font-weight: 600;
 }
 .hero-frame :nth-child(2) {
@@ -85,14 +81,14 @@
   font-size: 80px;
   font-family: "Inter", sans-serif;
   margin-bottom: 20px;
-  background-color: var(--herocolor);
+  background-color: #ffffff;
   font-weight: 600;
 }
 .hero-frame :nth-child(3) {
   color: #a8b0c7;
   font-family: "Inter", sans-serif;
   font-size: 15px;
-  background-color: var(--herocolor);
+  background-color: #ffffff;
   margin-bottom: 20px;
 }
 .hero-btn1 {
@@ -119,7 +115,7 @@
   font-family: "Inter", sans-serif;
 }
 .svg-spiral {
-  background-color: var(--herocolor);
+  background-color: #ffffff;
   margin-right: 10vw;
 }
 svg.svg-spiral .circle1 {
@@ -204,12 +200,6 @@ svg.svg-spiral .line {
 /* completed this much on 18/9/2026 24:45 pm */
 .tools-container {
   margin: 20px 20px;
-  /* padding: 20px 20px;
-  background-color: #11141f;
-  border: 2px solid #262e40;
-  border-radius: 20px; */
-  /* height: 200px; */
-  /* background-color: red; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -242,17 +232,6 @@ svg.svg-spiral .line {
   font-weight: 100;
 }
 
-@media screen and (max-width: 600px) {
-  .navbar {
-    display: none;
-  }
-  .svg-spiral {
-    display: none; /*this is media part for mobile has to be updated later*/
-  }
-  .hero-frame {
-    width: 100%;
-  }
-}
 /* skill part css ends here */
 .project-container {
   margin: 20px 20px;
@@ -455,6 +434,7 @@ svg.svg-spiral .line {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   gap: 0px 40px;
   background-color: #11141f;
 }
@@ -484,4 +464,19 @@ svg.svg-spiral .line {
   height: 100%;
   object-fit: contain;
   object-position: center;
+}
+
+@media screen and (max-width: 600px) {
+  * {
+    width:auto;
+  }
+  .navbar {
+    display: none;
+  }
+  .svg-spiral {
+    display: none; /*this is media part for mobile has to be updated later*/
+  }
+  .hero-frame {
+    width: 100%;
+  }
 }
