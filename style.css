@@ -120,10 +120,11 @@
 }
 .svg-spiral {
   background-color: var(--herocolor);
-  margin-right: 10%;
+  /* margin-right: 10%; */
+  margin-right: 10vw;
 }
 svg.svg-spiral .circle1 {
-  animation: spin1 10s linear infinite;
+  animation: spin1 10s ease-in-out infinite alternate;
   transform-origin: center;
   transform-box: fill-box;
 }
@@ -133,7 +134,7 @@ svg.svg-spiral .circle1 {
   }
 }
 svg.svg-spiral .circle2 {
-  animation: spin2 10s linear infinite;
+  animation: spin2 10s ease-in-out infinite alternate;
   transform-origin: center;
   transform-box: fill-box;
 }
@@ -141,6 +142,16 @@ svg.svg-spiral .circle2 {
 @keyframes spin2 {
   to {
     transform: scale(2);
+  }
+}
+svg.svg-spiral .line {
+  animation: liner 10s ease-in-out infinite alternate;
+  transform-origin: 230px 230px;
+}
+
+@keyframes liner {
+  to {
+    transform: rotate(360deg);
   }
 }
 
@@ -197,8 +208,8 @@ svg.svg-spiral .circle2 {
   /* padding: 20px 20px;
   background-color: #11141f;
   border: 2px solid #262e40;
-  border-radius: 20px;
-  height: 200px; */
+  border-radius: 20px; */
+  /* height: 200px; */
   /* background-color: red; */
   display: flex;
   flex-wrap: wrap;
@@ -208,7 +219,7 @@ svg.svg-spiral .circle2 {
 }
 
 .tools-container .tool {
-  width: 500px;
+  width: 400px;
   height: 100px;
   background-color: #11141f;
   border: 2px solid #262e40;
@@ -235,7 +246,6 @@ svg.svg-spiral .circle2 {
 @media screen and (max-width: 600px) {
   .navbar {
     display: none;
-    
   }
   .svg-spiral {
     display: none;
@@ -243,5 +253,4 @@ svg.svg-spiral .circle2 {
   .hero-frame {
     width: 100%;
   }
-
 }
