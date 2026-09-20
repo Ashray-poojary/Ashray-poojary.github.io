@@ -247,9 +247,63 @@ svg.svg-spiral .line {
     display: none;
   }
   .svg-spiral {
-    display: none;
+    display: none; /*this is media part for mobile has to be updated later*/
   }
   .hero-frame {
     width: 100%;
   }
 }
+/* skill part css ends here */
+.project-container {
+  margin: 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: 1fr 1fr; */
+  justify-content: space-around;
+  gap: 40px 20px;
+  align-items: center;
+}
+.project-container .projects {
+  width: 670px;
+  height: 140px;
+  background-color: #11141f;
+  border: 2px solid #262e40;
+  border-radius: 20px;
+  padding: 40px 20px;
+  font-family: "Inter";
+  /* background-color: red; */
+}
+.project-container .projects :nth-child(1) {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  background-color: #11141f;
+}
+
+.project-container .projects :nth-child(2) {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  background-color: #11141f;
+  font-weight: 100;
+}
+.project-container .projects .viewpro {
+  font-size: 20px;
+  height: 20px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  background-color: #11141f;
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+}
+.project-container .projects .viewpro :nth-child(1) {
+  font-size: 20px;
+  font-weight: 300;
+  color: #5c85ff;
+}
+.project-container .projects .viewpro :nth-child(2) {
+  font-size: 18px;
+  font-weight: 300;
+}
+/* project part css ended here */
