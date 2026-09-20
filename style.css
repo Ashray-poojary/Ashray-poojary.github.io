@@ -404,3 +404,58 @@ svg.svg-spiral .line {
   color: #5c85ff;
 }
 /* education part css ended here */
+.contact-container {
+  margin: 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px 20px;
+  align-items: center;
+}
+.contact-container .contact {
+  width: 90vw;
+  height: 140px;
+  background-color: #11141f;
+  border: 2px solid #262e40;
+  border-radius: 20px;
+  padding: 40px 20px;
+  font-family: "Inter";
+}
+.contact-container .contact :nth-child(1) {
+  margin-bottom: 30px;
+  background-color: #11141f;
+  font-size: 20px;
+  font-weight: 300;
+  color: #5c85ff;
+}
+
+.contact-container .contact .view-contact {
+  font-size: 20px;
+  height: 20px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  background-color: #11141f;
+  font-weight: 100;
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+.contact-container .contact .view-contact :nth-child(1) {
+  font-size: 20px;
+  font-weight: 100;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.contact-container .contact .view-contact :nth-child(2) {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #11141f;
+}
+.contact-container .contact .viewframe {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0px 40px;
+  background-color: #11141f;
+}
+/* contact part css ended here */
