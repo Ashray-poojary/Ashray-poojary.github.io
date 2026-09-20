@@ -317,7 +317,7 @@ svg.svg-spiral .line {
   align-items: center;
 }
 .certificate-container .certificates {
-  width: 400px;
+  width: 360px;
   height: 140px;
   background-color: #11141f;
   border: 2px solid #262e40;
@@ -356,3 +356,51 @@ svg.svg-spiral .line {
   color: #5c85ff;
 }
 /* achivement part css done here */
+
+.education-container {
+  margin: 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px 20px;
+  align-items: center;
+}
+.education-container .educations {
+  width: 90vw;
+  height: 140px;
+  background-color: #11141f;
+  border: 2px solid #262e40;
+  border-radius: 20px;
+  padding: 40px 20px;
+  font-family: "Inter";
+}
+.education-container .educations :nth-child(1) {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  background-color: #11141f;
+}
+
+.education-container .educations :nth-child(2) {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  background-color: #11141f;
+  font-weight: 100;
+}
+.education-container .educations .view-certificate {
+  font-size: 20px;
+  height: 20px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  background-color: #11141f;
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+}
+.education-container .educations .view-educations :nth-child(1) {
+  font-size: 20px;
+  font-weight: 300;
+  color: #5c85ff;
+}
+/* education part css ended here */
