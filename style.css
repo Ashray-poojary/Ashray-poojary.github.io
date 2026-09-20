@@ -1,119 +1,147 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-  --navbarcolor: #171c2b;
-  --herocolor: #ffffff;
+  --lightfontcolor: #a8b0c7;
+  --fontcolor: #ffffff;
+  --mainbgcolor: #090b12;
+  --navbarbgcolor: #171c2b;
+  --herobgcolor: #ffffff;
+  --lightthemecolor: #7aa6ff;
+  --themecolor: #5c84ff;
+  --darkthemecolor: red;
+  --herobtn1bgcolor: #4f7aff;
+  --herobtn2bgcolor: #171c2b;
+  --herobtn2bordercolor: #384057;
+}
+html {
+  font-size: 100%;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
 }
 
 * {
+  background-color: var(--mainbgcolor);
   margin: 0;
   padding: 0;
-  color: white;
-  background-color: #090b12;
+  color: var(--fontcolor);
   scroll-behavior: smooth;
   scroll-margin: 20px;
 }
+/* Navbar section strats here */
 .navbar {
-  height: 72px;
+  background-color: var(--navbarbgcolor);
+  height: 10vh;
   width: 100%;
-  background-color: #171c2b;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-.title {
-  padding: 0px 20px;
+.navbar-title-container {
+  background-color: var(--navbarbgcolor);
+  padding: 0vh 4vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #171c2b;
+  flex-wrap: wrap;
 }
-.title p {
-  font-size: 30px;
-  font-family: "Inter", sans-serif;
+.navbar-title-container p {
+  /*this is the title part*/
+  background-color: var(--navbarbgcolor);
+  font-size: 2rem;
   font-weight: 600;
-  background-color: #171c2b;
 }
-.navigation {
-  width: 340px;
-  height: 40px;
+.navbar-itms-container {
+  background-color: var(--navbarbgcolor);
+  gap: 0vh 2vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 10px;
-  background-color: #171c2b;
+  padding: 0vh 2vw;
 }
-.navigation a {
+.navbar-itms-container a {
+  background-color: var(--navbarbgcolor);
+  color: var(--fontcolor);
   text-decoration: none;
-  color: white;
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  background-color: #171c2b;
+  font-size: 1rem;
 }
+/* Navbar section ends here */
 
-.hero {
-  margin: 50px 0px;
-  height: 620px;
-  background-color: #ffffff;
+/* Hero section starts here */
+.hero-container {
+  background-color: var(--herobgcolor);
+  margin: 8vh 0vw;
+  height: 90vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.hero-frame {
+.hero-details-container {
+  background-color: var(--herobgcolor);
   width: 50%;
-  background-color: #ffffff;
-  margin: 0px 20px;
+  margin: 0vh 2vw;
 }
-.hero-frame p {
-  background-color: #ffffff;
+.hero-details-container p {
+  background-color: var(--herobgcolor);
+  /* text-align: center;  this will center the p tags text... looks good.*/
 }
-.hero-frame :nth-child(1) {
-  color: #7aa6ff;
-  font-size: large;
-  margin-bottom: 40px;
-  font-family: "Inter", sans-serif;
-  background-color: #ffffff;
+.hero-details-container :nth-child(1) {
+  background-color: var(--herobgcolor);
+  color: var(--lightthemecolor);
+  font-size: 1.2rem;
+  margin-bottom: 2vw;
   font-weight: 600;
 }
-.hero-frame :nth-child(2) {
-  color: #5c84ff;
-  font-size: 80px;
-  font-family: "Inter", sans-serif;
-  margin-bottom: 20px;
-  background-color: #ffffff;
+.hero-details-container :nth-child(2) {
+  background-color: var(--herobgcolor);
+  color: var(--themecolor);
+  font-size: 5rem;
+  margin-bottom: 2vw;
   font-weight: 600;
 }
-.hero-frame :nth-child(3) {
-  color: #a8b0c7;
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  background-color: #ffffff;
-  margin-bottom: 20px;
+.hero-details-container :nth-child(3) {
+  background-color: var(--herobgcolor);
+  color: var(--lightfontcolor);
+  font-size: 1.1rem;
+  margin-bottom: 2vw;
 }
 .hero-btn1 {
-  height: 60px;
-  width: 160px;
+  background-color: var(--herobtn1bgcolor);
+  min-height: 60px;
+  min-width: 160px;
+  height: 6vh;
+  width: 13vw;
+  border: 2px solid var(--herobtn1bgcolor);
   border-radius: 18px;
+  font-size: 1rem;
   font-weight: 600;
-  font-size: 16px;
-  margin-right: 8px;
-  margin-bottom: 20px;
-  background-color: #4f7aff;
-  border: 2px solid #4f7aff;
-  /*border: none;*/
-  font-family: "Inter", sans-serif;
+  margin-right: 1vw;
+  margin-bottom: 2vh;
 }
 .hero-btn2 {
-  height: 60px;
-  width: 160px;
+  background-color: var(--herobtn2bgcolor);
+  min-height: 60px;
+  min-width: 160px;
+  height: 6vh;
+  width: 13vw;
+  border: 2px solid var(--herobtn2bordercolor);
   border-radius: 18px;
+  font-size: 1rem;
   font-weight: 600;
-  font-size: 16px;
-  background-color: #171c2b;
-  border: 2px solid #384057;
-  font-family: "Inter", sans-serif;
 }
+/* Hero section details part ends here  */
+/* ended here on 20/9/2026, continue from here */
+/* Svg section starts here */
 .svg-spiral {
   background-color: #ffffff;
   margin-right: 10vw;
@@ -468,7 +496,7 @@ svg.svg-spiral .line {
 
 @media screen and (max-width: 600px) {
   * {
-    width:auto;
+    width: auto;
   }
   .navbar {
     display: none;
