@@ -104,7 +104,8 @@
   margin-right: 8px;
   margin-bottom: 20px;
   background-color: #4f7aff;
-  border: 2px solid #384057;
+  border: 2px solid #4f7aff;
+  /*border: none;*/
   font-family: "Inter", sans-serif;
 }
 .hero-btn2 {
@@ -229,4 +230,18 @@ svg.svg-spiral .circle2 {
   margin-bottom: 20px;
   background-color: #11141f;
   font-weight: 100;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+    
+  }
+  .svg-spiral {
+    display: none;
+  }
+  .hero-frame {
+    width: 100%;
+  }
+
 }
