@@ -120,7 +120,6 @@
 }
 .svg-spiral {
   background-color: var(--herocolor);
-  /* margin-right: 10%; */
   margin-right: 10vw;
 }
 svg.svg-spiral .circle1 {
