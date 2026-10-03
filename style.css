@@ -106,7 +106,7 @@ html {
 .hero-btn1 {
   background-color: var(--herobtn1bgcolor);
   min-height: 60px;
-  min-width: 160px;
+  min-width: 120px;
   height: 6vh;
   width: 13vw;
   border: 2px solid var(--herobtn1bgcolor);
@@ -119,7 +119,7 @@ html {
 .hero-btn2 {
   background-color: var(--herobtn2bgcolor);
   min-height: 60px;
-  min-width: 160px;
+  min-width: 120px;
   height: 6vh;
   width: 13vw;
   border: 2px solid var(--herobtn2bordercolor);
@@ -194,6 +194,11 @@ svg.svg-spiral .line {
   border-radius: 20px;
 }
 
+.about-detail:hover {
+    border-color: #384057;
+
+}
+
 .about-detail #focustitle {
   background-color: #11141f;
   color: #5c85ff;
@@ -233,6 +238,9 @@ svg.svg-spiral .line {
   font-family: "Inter";
   /* background-color: red; */
 }
+.tool:hover {
+  border-color: #384057;
+}
 .tools-container .tool :nth-child(1) {
   font-size: 30px;
   color: #ffffff;
@@ -267,6 +275,9 @@ svg.svg-spiral .line {
   padding: 40px 20px;
   font-family: "Inter";
   /* background-color: red; */
+}
+.projects:hover {
+  border-color: #384057;
 }
 .project-container .projects :nth-child(1) {
   font-size: 30px;
@@ -321,6 +332,9 @@ svg.svg-spiral .line {
   font-family: "Inter";
   /* background-color: red; */
 }
+.certificates:hover {
+  border-color: #384057;
+}
 .certificate-container .certificates :nth-child(1) {
   font-size: 30px;
   color: #ffffff;
@@ -369,6 +383,9 @@ svg.svg-spiral .line {
   padding: 40px 20px;
   font-family: "Inter";
 }
+.educations:hover {
+  border-color: #384057;
+}
 .education-container .educations :nth-child(1) {
   font-size: 30px;
   color: #ffffff;
@@ -415,6 +432,9 @@ svg.svg-spiral .line {
   border-radius: 20px;
   padding: 40px 20px;
   font-family: "Inter";
+}
+.contact:hover {
+  border-color: #384057;
 }
 .contact-container .contact :nth-child(1) {
   margin-bottom: 30px;
@@ -491,12 +511,18 @@ svg.svg-spiral .line {
     font-size: 14px;
   }
   .navbar {
-    justify-content: center;
+    /* justify-content: center; */
   }
   .navbar-itms-container {
     display: none;
   }
   .svg-spiral {
-    display: none; /*this is media part for mobile has to be updated later*/
+    display: none; /*this is media part for mobile has to be updated later */
+  }
+  .hero-btn1 {
+    width: 20px;
+  }
+  .hero-btn2{
+    /* display: none; */
   }
 }
