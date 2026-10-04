@@ -81,7 +81,7 @@ html {
   text-align: center; /* this is added to center */
 }
 .hero-details-container p {
-  background-color: var(--herobgcolor);
+  background-color: var(--lightfontcolor);
   text-align: center; /* this will center the p tags text... looks good.*/
 }
 .hero-details-container :nth-child(1) {
