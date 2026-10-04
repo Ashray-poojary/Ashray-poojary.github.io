@@ -78,10 +78,11 @@ html {
   background-color: var(--herobgcolor);
   width: 50%;
   margin: 0vh 2vw;
+  text-align: center; /* this is added to center */
 }
 .hero-details-container p {
   background-color: var(--herobgcolor);
-  /* text-align: center;  this will center the p tags text... looks good.*/
+  text-align: center; /* this will center the p tags text... looks good.*/
 }
 .hero-details-container :nth-child(1) {
   background-color: var(--herobgcolor);
@@ -99,7 +100,8 @@ html {
 }
 .hero-details-container :nth-child(3) {
   background-color: var(--herobgcolor);
-  color: var(--lightfontcolor);
+  /* color: var(--lightfontcolor); */
+  color: var(--herobtn2bordercolor);
   font-size: 1.1rem;
   margin-bottom: 2vw;
 }
@@ -511,10 +513,11 @@ svg.svg-spiral .line {
     font-size: 14px;
   }
   .navbar {
-    /* justify-content: center; */
+    justify-content: center;
   }
   .navbar-itms-container {
-    display: none;
+    display: flex;
+    flex-direction: column;
   }
   .svg-spiral {
     display: none; /*this is media part for mobile has to be updated later */
