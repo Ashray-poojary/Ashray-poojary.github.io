@@ -68,7 +68,7 @@ html {
 /* Hero section starts here */
 .hero-container {
   background-color: var(--herobgcolor);
-  margin: 8vh 0vw;
+  margin: 0vh 0vw;
   height: 90vh;
   display: flex;
   justify-content: space-between;
@@ -170,7 +170,7 @@ svg.svg-spiral .line {
 
 /* hero part css ends here */
 .about {
-  margin: 0px 20px;
+  margin: 20px 20px;
   font-family: "Inter", sans-serif;
 }
 .about :nth-child(1) {
@@ -197,8 +197,7 @@ svg.svg-spiral .line {
 }
 
 .about-detail:hover {
-    border-color: #384057;
-
+  border-color: #384057;
 }
 
 .about-detail #focustitle {
@@ -505,27 +504,57 @@ svg.svg-spiral .line {
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
   html {
     width: auto;
-    font-size: 14px;
+    font-size: 18px;
   }
   .navbar {
     justify-content: center;
+    /* display: none; */
   }
   .navbar-itms-container {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
+    display: none;
   }
   .svg-spiral {
     display: none; /*this is media part for mobile has to be updated later */
   }
-  .hero-btn1 {
-    width: 20px;
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .hero-btn2{
+  .hero-details-container {
+    width: 100%;
+    line-height: 1.4;
+  }
+  .hero-btn1 {
+    margin-top: 40px;
+    margin-right: 4vw;
+    width: 150px;
+  }
+  .hero-btn2 {
     /* display: none; */
+    width: 150px;
+  }
+  .projects {
+    min-height: 240px;
+  }
+  .certificates {
+    min-height: 200px;
+  }
+  .educations {
+    min-height: 200px;
+  }
+  .contact-container .contact {
+    /* display: none; */
+    height: max-content;
+  }
+  .viewframe {
+    height: 300px;
+  }
+  .timepass {
+    display: none;
   }
 }
