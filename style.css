@@ -238,7 +238,8 @@ svg.svg-spiral .line {
 
 .tools-container .tool {
   width: 400px;
-  height: 100px;
+  height: auto;
+  /* height: 100px; */
   background-color: #11141f;
   border: 2px solid #262e40;
   border-radius: 20px;
@@ -276,7 +277,8 @@ svg.svg-spiral .line {
 }
 .project-container .projects {
   width: 600px;
-  height: 140px;
+  height: auto;
+  /* height: 140px; */
   background-color: #11141f;
   border: 2px solid #262e40;
   border-radius: 20px;
@@ -332,7 +334,8 @@ svg.svg-spiral .line {
 }
 .learning-container .learnings {
   width: 360px;
-  height: 140px;
+  height: auto;
+  /* height: 140px; */
   background-color: #11141f;
   border: 2px solid #262e40;
   border-radius: 20px;
@@ -433,7 +436,8 @@ svg.svg-spiral .line {
 }
 .education-container .educations {
   width: 90vw;
-  height: 140px;
+  height: auto;
+  /* height: 140px; */
   background-color: #11141f;
   border: 2px solid #262e40;
   border-radius: 20px;
@@ -483,11 +487,11 @@ svg.svg-spiral .line {
 }
 .contact-container .contact {
   width: 90vw;
-  height: 140px;
+  height: auto;
   background-color: #11141f;
   border: 2px solid #262e40;
   border-radius: 20px;
-  padding: 40px 20px;
+  padding: 50px 20px;
   font-family: "Inter";
 }
 .contact:hover {
@@ -526,9 +530,10 @@ svg.svg-spiral .line {
 .contact-container .contact .viewframe {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 0px 40px;
+  height: auto;
+  gap: 50px 80px;
   background-color: #11141f;
 }
 /* contact part css ended here */
@@ -560,7 +565,7 @@ svg.svg-spiral .line {
 }
 
 .timepass img:hover {
-  background-color:  var(--navbarbgcolor);
+  background-color: var(--navbarbgcolor);
   animation: spin2 5s ease-in-out infinite alternate;
 }
 
@@ -616,6 +621,9 @@ svg.svg-spiral .line {
   }
   .projects {
     min-height: 240px;
+  }
+  .achievement-container .achievements {
+    height: auto;
   }
   .certificates {
     min-height: 200px;
