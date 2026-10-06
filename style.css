@@ -70,7 +70,8 @@ html {
 /* Hero section starts here */
 .hero-container {
   background-color: var(--herobgcolor);
-  margin: 5vh 0vw;
+  margin: 10vh 0vw;
+  /* margin: 5vh 0vw; */
   height: 90vh;
   display: flex;
   justify-content: space-between;
@@ -535,7 +536,7 @@ svg.svg-spiral .line {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 20px;
+  margin: 20px 20px;
   font-family: "Inter";
   font-size: 16px;
   font-weight: 200;
@@ -556,6 +557,11 @@ svg.svg-spiral .line {
   height: 100%;
   object-fit: contain;
   object-position: center;
+}
+
+.timepass img:hover {
+  background-color:  var(--navbarbgcolor);
+  animation: spin2 5s ease-in-out infinite alternate;
 }
 
 @media screen and (max-width: 600px) {
@@ -598,9 +604,16 @@ svg.svg-spiral .line {
   .about {
     font-size: 1em;
   }
-  .about :nth-child(1){font-size: 1.5em;}
-  .about :nth-child(2){font-size: 1.5em;}
-  .about :nth-child(3){font-size: 1em; line-height: 1.5em;}
+  .about :nth-child(1) {
+    font-size: 1.5em;
+  }
+  .about :nth-child(2) {
+    font-size: 1.5em;
+  }
+  .about :nth-child(3) {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
   .projects {
     min-height: 240px;
   }
