@@ -183,6 +183,7 @@ svg.svg-spiral .line {
   /* font-size: 20px; */
   font-size: 1.5em;
   font-weight: 200;
+  line-height: 1.5em;
 }
 .about-detail {
   margin: 40px 20px 40px 20px;
@@ -226,7 +227,7 @@ svg.svg-spiral .line {
 }
 /* completed this much on 18/9/2026 24:45 pm */
 .tools-container {
-  margin: 20px 20px;
+  margin: 40px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -264,7 +265,7 @@ svg.svg-spiral .line {
 
 /* skill part css ends here */
 .project-container {
-  margin: 20px 20px;
+  margin: 40px 20px;
   display: flex;
   flex-wrap: wrap;
   /* grid-template-columns: 1fr 1fr; */
@@ -320,7 +321,7 @@ svg.svg-spiral .line {
 }
 /* project part css ended here */
 .certificate-container {
-  margin: 20px 20px;
+  margin: 40px 20px;
   display: flex;
   flex-wrap: wrap;
   /* grid-template-columns: 1fr 1fr; */
@@ -373,7 +374,7 @@ svg.svg-spiral .line {
 /* achivement part css done here */
 
 .education-container {
-  margin: 20px 20px;
+  margin: 40px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -423,7 +424,7 @@ svg.svg-spiral .line {
 }
 /* education part css ended here */
 .contact-container {
-  margin: 20px 20px;
+  margin: 40px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -493,7 +494,7 @@ svg.svg-spiral .line {
 
 .timepass {
   height: 400px;
-  margin: 0px 20px;
+  margin: 40px 20px;
   border: 2px solid #262e40;
   border-radius: 20px;
   contain: strict;
@@ -545,6 +546,12 @@ svg.svg-spiral .line {
   .about-detail {
     height: auto;
   }
+  .about {
+    font-size: 1em;
+  }
+  .about :nth-child(1){font-size: 1.5em;}
+  .about :nth-child(2){font-size: 1.5em;}
+  .about :nth-child(3){font-size: 1em; line-height: 1.5em;}
   .projects {
     min-height: 240px;
   }
