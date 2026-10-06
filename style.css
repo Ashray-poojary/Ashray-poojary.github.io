@@ -320,7 +320,7 @@ svg.svg-spiral .line {
   font-weight: 300;
 }
 /* project part css ended here */
-.certificate-container {
+.learning-container {
   margin: 40px 20px;
   display: flex;
   flex-wrap: wrap;
@@ -329,7 +329,7 @@ svg.svg-spiral .line {
   gap: 40px 20px;
   align-items: center;
 }
-.certificate-container .certificates {
+.learning-container .learnings {
   width: 360px;
   height: 140px;
   background-color: #11141f;
@@ -339,24 +339,24 @@ svg.svg-spiral .line {
   font-family: "Inter";
   /* background-color: red; */
 }
-.certificates:hover {
+.learnings:hover {
   border-color: #384057;
 }
-.certificate-container .certificates :nth-child(1) {
+.learning-container .learnings :nth-child(1) {
   font-size: 30px;
   color: #ffffff;
   margin-bottom: 20px;
   background-color: #11141f;
 }
 
-.certificate-container .certificates :nth-child(2) {
+.learning-container .learnings :nth-child(2) {
   font-size: 20px;
   color: #ffffff;
   margin-bottom: 40px;
   background-color: #11141f;
   font-weight: 100;
 }
-.certificate-container .certificates .view-certificate {
+.learning-container .learnings .view-learning {
   font-size: 20px;
   height: 20px;
   color: #ffffff;
@@ -366,13 +366,62 @@ svg.svg-spiral .line {
   display: flex;
   justify-content: space-between;
 }
-.certificate-container .certificates .view-certificate :nth-child(1) {
+.learning-container .learnings .view-learning :nth-child(1) {
+  font-size: 20px;
+  font-weight: 300;
+  color: #5c85ff;
+}
+/* learning part css done here */
+.achievement-container {
+  margin: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px 20px;
+  align-items: center;
+}
+.achievement-container .achievements {
+  width: 90vw;
+  height: 140px;
+  background-color: #11141f;
+  border: 2px solid #262e40;
+  border-radius: 20px;
+  padding: 40px 20px;
+  font-family: "Inter";
+}
+.achievements:hover {
+  border-color: #384057;
+}
+.achievement-container .achievements :nth-child(1) {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  background-color: #11141f;
+}
+
+.achievement-container .achievements :nth-child(2) {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  background-color: #11141f;
+  font-weight: 100;
+}
+.achievement-container .achievements .view-achievements {
+  font-size: 20px;
+  height: 20px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  background-color: #11141f;
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+}
+.achievement-container .achievements .view-achievements :nth-child(1) {
   font-size: 20px;
   font-weight: 300;
   color: #5c85ff;
 }
 /* achivement part css done here */
-
 .education-container {
   margin: 40px 20px;
   display: flex;
@@ -407,7 +456,7 @@ svg.svg-spiral .line {
   background-color: #11141f;
   font-weight: 100;
 }
-.education-container .educations .view-certificate {
+.education-container .educations .view-educations {
   font-size: 20px;
   height: 20px;
   color: #ffffff;
