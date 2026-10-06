@@ -24,16 +24,18 @@ html {
   padding: 0;
   color: var(--fontcolor);
   scroll-behavior: smooth;
-  scroll-margin: 20px;
+  scroll-margin: 12vh;
 }
 /* Navbar section strats here */
 .navbar {
   background-color: var(--navbarbgcolor);
   height: 10vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0px;
 }
 .navbar-title-container {
   background-color: var(--navbarbgcolor);
@@ -68,7 +70,7 @@ html {
 /* Hero section starts here */
 .hero-container {
   background-color: var(--herobgcolor);
-  margin: 0vh 0vw;
+  margin: 5vh 0vw;
   height: 90vh;
   display: flex;
   justify-content: space-between;
@@ -103,38 +105,29 @@ html {
   /* color: var(--lightfontcolor); */
   color: var(--herobtn2bordercolor);
   font-size: 1.1rem;
-  margin-bottom: 2vw;
+  margin-bottom: 4vw;
+  line-height: 1.5;
 }
-.hero-btn1 {
-  background-color: var(--herobtn1bgcolor);
-  min-height: 60px;
-  min-width: 120px;
-  height: 6vh;
-  width: 13vw;
-  border: 2px solid var(--herobtn1bgcolor);
-  border-radius: 18px;
+.hero-btn {
+  text-decoration: none;
+  padding: 22px;
+  border-radius: 20px;
   font-size: 1rem;
   font-weight: 600;
-  margin-right: 1vw;
-  margin-bottom: 2vh;
-}
-.hero-btn2 {
   background-color: var(--herobtn2bgcolor);
-  min-height: 60px;
-  min-width: 120px;
-  height: 6vh;
-  width: 13vw;
   border: 2px solid var(--herobtn2bordercolor);
-  border-radius: 18px;
-  font-size: 1rem;
-  font-weight: 600;
+}
+.first-btn {
+  background-color: var(--herobtn1bgcolor);
+  border: 2px solid var(--herobtn1bgcolor);
+  margin-right: 2vw;
 }
 /* Hero section details part ends here  */
 /* ended here on 20/9/2026, continue from here */
 /* Svg section starts here */
 .svg-spiral {
   background-color: #ffffff;
-  margin-right: 10vw;
+  margin-right: 7vw;
 }
 svg.svg-spiral .circle1 {
   animation: spin1 10s ease-in-out infinite alternate;
@@ -170,27 +163,33 @@ svg.svg-spiral .line {
 
 /* hero part css ends here */
 .about {
+  font-size: 1em;
   margin: 20px 20px;
   font-family: "Inter", sans-serif;
 }
 .about :nth-child(1) {
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 2em;
   color: #5c85ff;
   margin-bottom: 20px;
 }
 .about :nth-child(2) {
-  font-size: 50px;
+  /* font-size: 50px; */
+  font-size: 2em;
   font-weight: 600;
   margin-bottom: 10px;
 }
 .about :nth-child(3) {
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 1.5em;
   font-weight: 200;
+  line-height: 1.5em;
 }
 .about-detail {
   margin: 40px 20px 40px 20px;
-  padding: 20px 20px;
+  padding: 40px 20px;
   height: 200px;
+  /* height: auto; */
   background-color: #11141f;
   border: 2px solid #262e40;
   border-radius: 20px;
@@ -208,12 +207,19 @@ svg.svg-spiral .line {
 .focustags {
   height: 90%;
   font-size: 28px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
   gap: 5px 100px;
   background-color: #11141f;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  align-items: center;
+  justify-items: center;
 }
 
 .focustags p {
@@ -221,7 +227,7 @@ svg.svg-spiral .line {
 }
 /* completed this much on 18/9/2026 24:45 pm */
 .tools-container {
-  margin: 20px 20px;
+  margin: 40px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -259,7 +265,7 @@ svg.svg-spiral .line {
 
 /* skill part css ends here */
 .project-container {
-  margin: 20px 20px;
+  margin: 40px 20px;
   display: flex;
   flex-wrap: wrap;
   /* grid-template-columns: 1fr 1fr; */
@@ -314,8 +320,8 @@ svg.svg-spiral .line {
   font-weight: 300;
 }
 /* project part css ended here */
-.certificate-container {
-  margin: 20px 20px;
+.learning-container {
+  margin: 40px 20px;
   display: flex;
   flex-wrap: wrap;
   /* grid-template-columns: 1fr 1fr; */
@@ -323,7 +329,7 @@ svg.svg-spiral .line {
   gap: 40px 20px;
   align-items: center;
 }
-.certificate-container .certificates {
+.learning-container .learnings {
   width: 360px;
   height: 140px;
   background-color: #11141f;
@@ -333,24 +339,24 @@ svg.svg-spiral .line {
   font-family: "Inter";
   /* background-color: red; */
 }
-.certificates:hover {
+.learnings:hover {
   border-color: #384057;
 }
-.certificate-container .certificates :nth-child(1) {
+.learning-container .learnings :nth-child(1) {
   font-size: 30px;
   color: #ffffff;
   margin-bottom: 20px;
   background-color: #11141f;
 }
 
-.certificate-container .certificates :nth-child(2) {
+.learning-container .learnings :nth-child(2) {
   font-size: 20px;
   color: #ffffff;
   margin-bottom: 40px;
   background-color: #11141f;
   font-weight: 100;
 }
-.certificate-container .certificates .view-certificate {
+.learning-container .learnings .view-learning {
   font-size: 20px;
   height: 20px;
   color: #ffffff;
@@ -360,15 +366,64 @@ svg.svg-spiral .line {
   display: flex;
   justify-content: space-between;
 }
-.certificate-container .certificates .view-certificate :nth-child(1) {
+.learning-container .learnings .view-learning :nth-child(1) {
+  font-size: 20px;
+  font-weight: 300;
+  color: #5c85ff;
+}
+/* learning part css done here */
+.achievement-container {
+  margin: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px 20px;
+  align-items: center;
+}
+.achievement-container .achievements {
+  width: 90vw;
+  height: 140px;
+  background-color: #11141f;
+  border: 2px solid #262e40;
+  border-radius: 20px;
+  padding: 40px 20px;
+  font-family: "Inter";
+}
+.achievements:hover {
+  border-color: #384057;
+}
+.achievement-container .achievements :nth-child(1) {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  background-color: #11141f;
+}
+
+.achievement-container .achievements :nth-child(2) {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  background-color: #11141f;
+  font-weight: 100;
+}
+.achievement-container .achievements .view-achievements {
+  font-size: 20px;
+  height: 20px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  background-color: #11141f;
+  font-weight: 100;
+  display: flex;
+  justify-content: space-between;
+}
+.achievement-container .achievements .view-achievements :nth-child(1) {
   font-size: 20px;
   font-weight: 300;
   color: #5c85ff;
 }
 /* achivement part css done here */
-
 .education-container {
-  margin: 20px 20px;
+  margin: 40px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -401,7 +456,7 @@ svg.svg-spiral .line {
   background-color: #11141f;
   font-weight: 100;
 }
-.education-container .educations .view-certificate {
+.education-container .educations .view-educations {
   font-size: 20px;
   height: 20px;
   color: #ffffff;
@@ -418,7 +473,7 @@ svg.svg-spiral .line {
 }
 /* education part css ended here */
 .contact-container {
-  margin: 20px 20px;
+  margin: 40px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -488,7 +543,7 @@ svg.svg-spiral .line {
 
 .timepass {
   height: 400px;
-  margin: 0px 20px;
+  margin: 40px 20px;
   border: 2px solid #262e40;
   border-radius: 20px;
   contain: strict;
@@ -506,15 +561,13 @@ svg.svg-spiral .line {
 @media screen and (max-width: 600px) {
   html {
     width: auto;
-    font-size: 18px;
+    font-size: 14px;
   }
   .navbar {
     justify-content: center;
     /* display: none; */
   }
   .navbar-itms-container {
-    /* display: flex; */
-    /* flex-direction: column; */
     display: none;
   }
   .svg-spiral {
@@ -526,18 +579,28 @@ svg.svg-spiral .line {
     align-items: center;
   }
   .hero-details-container {
+    margin-top: -100px;
     width: 100%;
     line-height: 1.4;
   }
-  .hero-btn1 {
-    margin-top: 40px;
-    margin-right: 4vw;
-    width: 150px;
+  .hero-details-container :nth-child(3) {
+    margin-bottom: 6vh;
   }
-  .hero-btn2 {
-    /* display: none; */
-    width: 150px;
+  .focustags {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
   }
+  .about-detail {
+    height: auto;
+  }
+  .about {
+    font-size: 1em;
+  }
+  .about :nth-child(1){font-size: 1.5em;}
+  .about :nth-child(2){font-size: 1.5em;}
+  .about :nth-child(3){font-size: 1em; line-height: 1.5em;}
   .projects {
     min-height: 240px;
   }
