@@ -70,7 +70,7 @@ html {
 /* Hero section starts here */
 .hero-container {
   background-color: var(--herobgcolor);
-  margin: 10vh 0vw;
+  margin: 5vh 0vw;
   height: 90vh;
   display: flex;
   justify-content: space-between;
@@ -163,21 +163,25 @@ svg.svg-spiral .line {
 
 /* hero part css ends here */
 .about {
+  font-size: 1em;
   margin: 20px 20px;
   font-family: "Inter", sans-serif;
 }
 .about :nth-child(1) {
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 2em;
   color: #5c85ff;
   margin-bottom: 20px;
 }
 .about :nth-child(2) {
-  font-size: 50px;
+  /* font-size: 50px; */
+  font-size: 2em;
   font-weight: 600;
   margin-bottom: 10px;
 }
 .about :nth-child(3) {
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 1.5em;
   font-weight: 200;
 }
 .about-detail {
