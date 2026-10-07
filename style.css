@@ -590,7 +590,7 @@ svg.svg-spiral .line {
     align-items: center;
   }
   .hero-details-container {
-    margin-top: -100px;
+    margin-top: 0px;
     width: 100%;
     line-height: 1.4;
   }
