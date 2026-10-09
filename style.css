@@ -591,6 +591,8 @@ svg.svg-spiral .line {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(http://127.0.0.1:5500/image.png);
+    background-position: 40%;
   }
   .hero-details-container {
     margin-top: 0px;
