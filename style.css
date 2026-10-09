@@ -322,6 +322,9 @@ svg.svg-spiral .line {
   font-size: 18px;
   font-weight: 300;
 }
+.viewpro a{
+  text-decoration: none;
+}
 /* project part css ended here */
 .learning-container {
   margin: 40px 20px;
