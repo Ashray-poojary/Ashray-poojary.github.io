@@ -1,9 +1,9 @@
 setInterval(() => {
    let dytext = document.getElementById("dytext");
-let a=["hi,I am  Ashray","hello, I am Ashray","HI","I can see you","You allright"]
+let a=["Hi, I am Ashray","Hello, Ashray here","HI.......!","I can see you..","You Allright!"]
 let c=Math.floor(Math.random(a)*a.length)
 dytext.innerText=a[c]; 
-}, 4000);
+}, 5000);
 
 
 // let txprint = () => {
