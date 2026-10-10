@@ -24,7 +24,7 @@ html {
   padding: 0;
   color: var(--fontcolor);
   scroll-behavior: smooth;
-  scroll-margin: 12vh;
+  scroll-margin: 14vh;
 }
 /* Navbar section strats here */
 .navbar {
@@ -51,6 +51,9 @@ html {
   font-size: 2rem;
   font-weight: 600;
 }
+.navbar-title-container p:hover {
+  color: var(--themecolor);
+}
 .navbar-itms-container {
   background-color: var(--navbarbgcolor);
   gap: 0vh 2vw;
@@ -65,6 +68,10 @@ html {
   text-decoration: none;
   font-size: 1rem;
 }
+.navbar-itms-container a:hover {
+  color: var(--herobtn1bgcolor);
+}
+.navbar-itms-container a::after {color: var(--herobtn1bgcolor);}
 /* Navbar section ends here */
 
 /* Hero section starts here */
@@ -178,13 +185,14 @@ svg.svg-spiral .line {
   /* font-size: 50px; */
   font-size: 2em;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .about :nth-child(3) {
   /* font-size: 20px; */
   font-size: 1.5em;
   font-weight: 200;
-  line-height: 1.5em;
+  line-height: 1.6em;
+  word-spacing: 1px;
 }
 .about-detail {
   margin: 40px 20px 40px 20px;
@@ -237,9 +245,8 @@ svg.svg-spiral .line {
 }
 
 .tools-container .tool {
-  width: 400px;
+  width: 370px;
   height: auto;
-  /* height: 100px; */
   background-color: #11141f;
   border: 2px solid #262e40;
   border-radius: 20px;
@@ -337,8 +344,8 @@ svg.svg-spiral .line {
 }
 .learning-container .learnings {
   width: 360px;
-  height: auto;
   min-height: 200px;
+  max-height: 240px;
   background-color: #11141f;
   border: 2px solid #262e40;
   border-radius: 20px;
@@ -491,6 +498,7 @@ svg.svg-spiral .line {
 .contact-container .contact {
   width: 90vw;
   height: auto;
+  min-height: 120px;
   background-color: #11141f;
   border: 2px solid #262e40;
   border-radius: 20px;
