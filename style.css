@@ -655,3 +655,12 @@ svg.svg-spiral .line {
     display: none;
   }
 }
+
+/* this is for typewriiter effect on hero title */
+#dytext::after {
+  content: "|";
+  animation: blink 0.8s infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
