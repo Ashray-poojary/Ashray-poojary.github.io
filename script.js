@@ -17,9 +17,8 @@
 // }, 2000);
 
 // trying to make the text letter by letter appearing effect by own
-
-const words = ["Hi, I am Ashray.","Hello There!","Explore ME."];
-const speed = 150;  // Speed of typing in milliseconds
+const words = ["Hi, I am Ashray.","Hello There!","Explore Me.","Here to build","Hey, it’s Ashray","Hands-on builder","Hack. Build. Ship.","Hello, world","Hi, meet Ashray","Hardwired to create","Hey, welcome in","High-impact code"];
+const speed = 180;  // Speed of typing in milliseconds
 const eraseSpeed = 100; // Speed of erasing in milliseconds
 const delayBetweenWords = 2000; // Pause before erasing
 
@@ -46,7 +45,7 @@ function type() {
     target.textContent = currentWord.substring(0, charIndex - 1);
     charIndex--;
 
-    if (charIndex === 0) {
+    if (charIndex === 1) {
       isErasing = false;
       wordIndex = (wordIndex + 1) % words.length; // Move to next word (loops back)
     }
