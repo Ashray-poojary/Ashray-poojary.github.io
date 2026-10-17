@@ -124,19 +124,19 @@ html {
   font-size: 1rem;
   font-weight: 600;
   background-color: var(--herobtn2bgcolor);
-  border: 2px solid var(--herobtn2bordercolor);
+  border: 2px solid var(--herobtn1bgcolor);
 }
 .hero-btn:hover {
-  box-shadow: 0px 0px 60px var(--herobtn1bgcolor);
+  box-shadow: 8px 15px 60px var(--herobtn1bgcolor);
   text-shadow: 0px 0px 30px var(--herobgcolor);
 }
 .first-btn {
   background-color: var(--herobtn1bgcolor);
-  border: 2px solid var(--herobtn1bgcolor);
+  border: 2px solid var(--herobtn2bordercolor);
   margin-right: 2vw;
 }
 .first-btn:hover {
-  box-shadow: 0px 0px 60px var(--herobtn2bgcolor);
+  box-shadow: 8px 15px 60px var(--herobtn2bordercolor);
 }
 /* Hero section details part ends here  */
 /* ended here on 20/9/2026, continue from here */
