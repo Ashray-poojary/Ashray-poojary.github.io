@@ -186,6 +186,15 @@ svg.svg-spiral .line {
 }
 .logo-a-path {
   transform: translateY(-4px);
+  animation: logo 10s ease-in-out infinite alternate;
+}
+@keyframes logo {
+  to {
+    stroke: white;
+  }
+}
+.logo-a-path:hover {
+  stroke: var(--herobgcolor);
 }
 
 /* hero part css ends here */
