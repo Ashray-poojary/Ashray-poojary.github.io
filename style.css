@@ -184,6 +184,9 @@ svg.svg-spiral .line {
     transform: rotate(360deg);
   }
 }
+.logo-a-path {
+  transform: translateY(-4px);
+}
 
 /* hero part css ends here */
 .about {
