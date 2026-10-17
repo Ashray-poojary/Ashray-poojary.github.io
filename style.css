@@ -123,21 +123,29 @@ html {
   border-radius: 20px;
   font-size: 1rem;
   font-weight: 600;
-  background-color: var(--herobtn2bgcolor);
-  border: 2px solid var(--herobtn1bgcolor);
-}
-.hero-btn:hover {
-  box-shadow: 8px 15px 60px var(--herobtn1bgcolor);
-  text-shadow: 0px 0px 30px var(--herobgcolor);
 }
 .first-btn {
   background-color: var(--herobtn1bgcolor);
   border: 2px solid var(--herobtn2bordercolor);
-  margin-right: 2vw;
+  margin-right: 2.5vw;
 }
+
 .first-btn:hover {
-  box-shadow: 8px 15px 60px var(--herobtn2bordercolor);
+  box-shadow: inset 0px 2px 20px var(--herobtn2bordercolor);
+  transform: translateX(20px);
+  background-color: var(--themecolor);
+  transform: scale(25%);
 }
+.second-btn {
+  background-color: var(--mainbgcolor);
+  border: 2px solid var(--herobtn1bgcolor);
+}
+.second-btn:hover {
+  box-shadow: inset 0px 2px 20px var(--herobtn1bgcolor);
+  /* text-shadow: 0px 0px 30px var(--herobgcolor); */
+  background-color: var(--navbarbgcolor);
+}
+
 /* Hero section details part ends here  */
 /* ended here on 20/9/2026, continue from here */
 /* Svg section starts here */
@@ -631,7 +639,7 @@ svg.svg-spiral .line {
     line-height: 1.4;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(2px);
-    box-shadow: 8px 15px 60px var(--herobtn1bgcolor);
+    /* box-shadow: 8px 15px 60px var(--herobtn1bgcolor); */
   }
   .hero-details-container :nth-child(1) {
     background-color: rgba(255, 255, 255, 0.2);
