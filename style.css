@@ -589,6 +589,9 @@ svg.svg-spiral .line {
 }
 
 @media screen and (max-width: 600px) {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
   html {
     width: auto;
     font-size: 14px;
@@ -628,6 +631,7 @@ svg.svg-spiral .line {
     line-height: 1.4;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(2px);
+    box-shadow: 8px 15px 60px var(--herobtn1bgcolor);
   }
   .hero-details-container :nth-child(1) {
     background-color: rgba(255, 255, 255, 0.2);
