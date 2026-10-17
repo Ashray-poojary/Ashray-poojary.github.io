@@ -45,13 +45,14 @@ html {
   align-items: center;
   flex-wrap: wrap;
 }
-.navbar-title-container p {
+.navbar-title-container a {
   /*this is the title part*/
+  text-decoration: none;
   background-color: var(--navbarbgcolor);
   font-size: 2rem;
   font-weight: 600;
 }
-.navbar-title-container p:hover {
+.navbar-title-container a:hover {
   color: var(--themecolor);
 }
 .navbar-itms-container {
@@ -596,6 +597,17 @@ svg.svg-spiral .line {
     justify-content: center;
     /* display: none; */
     z-index: 3;
+    background-color: #171c2b5a;
+    /* opacity: 50%; */
+    backdrop-filter: blur(4px);
+  }
+  .navbar-title-container {
+    background: none;
+  }
+  .navbar-title-container a {
+    background: none;
+    letter-spacing: 30px;
+    padding-left: inherit;
   }
   .navbar-itms-container {
     display: none;
